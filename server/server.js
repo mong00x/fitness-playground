@@ -1,3 +1,7 @@
+const { connectDB } = require('./config/db.js'); // Import the connectDB function
+
+connectDB(); // Connect to MongoDB
+
 const express = require('express');
 const app = express();
 const port = 3001;
@@ -11,3 +15,4 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
+
