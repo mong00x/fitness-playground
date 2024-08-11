@@ -20,8 +20,6 @@
         "browser": true,
         "amd": true
     },
-    "extends": [
-        "prettier"
-    ],
+    "extends": ["next", "prettier"],
     
 }
